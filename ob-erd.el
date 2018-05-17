@@ -5,8 +5,6 @@
   :group 'org-babel
   :type 'stirng)
 
-(defun org-babel-erd-make-body (body params)
-  (org-babel-expand-body:generic body params))
 
 ;;;###autoload
 (defun org-babel-execute:erd (body params)
