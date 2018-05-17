@@ -1,0 +1,32 @@
+* ob-erd
+
+** Description
+This package enables you to generate diagrams using erd and imagemagick.
+It first creates a pdf file with erd and then using imagemagick's convert it converts the
+pdf file to png, so it can be inlined on a org file
+
+** Requirements
+1. [[https://github.com/BurntSushi/erd/][erd]]
+2. [[https://www.imagemagick.org/script/index.php][imagemagick]]
+
+** Usage
+Use BEGIN_SRC like this:
+
+
+#+BEGIN_SRC
+#+BEGIN_SRC erd :file example.png
+[User]
+*id
+user_role_id
+email
+password
+
+[UserRole]
+*id
+name
+
+User 1--1 UserRole
+#+END_SRC
+#+END_SRC
+
+And then do C-c C-c to eval the code.
