@@ -3,7 +3,7 @@
 (defcustom org-erd-executable-path "erd"
   "Path to the erd executable."
   :group 'org-babel
-  :type 'stirng)
+  :type 'string)
 
 (defcustom org-imagemagick-convert-executable-path "convert"
   "Path to imagemagick's convert executable."
