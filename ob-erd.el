@@ -8,6 +8,7 @@
 (defun org-babel-erd-make-body (body params)
   (org-babel-expand-body:generic body params))
 
+;;;###autoload
 (defun org-babel-execute:erd (body params)
   "Execute a block of erd code with org-babel.
 This function is called by `org-babel-execute-src-block'."
