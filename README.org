@@ -14,7 +14,7 @@ Use BEGIN_SRC like this:
 
 
 #+BEGIN_SRC
-#+BEGIN_SRC erd :file example.png
+,#+BEGIN_SRC erd :file example.png
 [User]
 *id
 user_role_id
@@ -26,7 +26,7 @@ password
 name
 
 User 1--1 UserRole
-#+END_SRC
+,#+END_SRC
 #+END_SRC
 
 And then do C-c C-c to eval the code.
