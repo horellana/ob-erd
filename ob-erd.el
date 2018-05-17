@@ -43,12 +43,13 @@
 
 ;;;###autoload
 (defun org-babel-execute:erd (body params)
-  "Execute a block of erd code with org-babel.
+  "Execute a block of erd code in BODY with org-babel.
+Takes a file path from PARAMS.
 This function is called by `org-babel-execute-src-block'."
   (let* ((tmp-out-file (make-temp-file "ob-erd"))
          (tmp-file (make-temp-file "ob-erd"))
          (out-file (or (cdr (assq :file params))
-                       (error "erd requires a \":file\" header argument")))
+                       (error "Erd requires a \":file\" header argument")))
 
          (erd-cmd (format "%s -i %s -o %s"
                             org-erd-executable-path
