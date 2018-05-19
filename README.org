@@ -1,9 +1,7 @@
 * ob-erd
 
 ** Description
-This package enables you to generate diagrams using erd and imagemagick.
-It first creates a pdf file with erd and then using imagemagick's convert it converts the
-pdf file to png, so it can be inlined on a org file
+This package integrates org-mode with erd, allowing to generate and inline diagrams in an org file
 
 ** Requirements
 1. [[https://github.com/BurntSushi/erd/][erd]]
