@@ -31,12 +31,12 @@
 ;;; Code:
 (require 'ob)
 
-(defcustom org-erd-executable-path "erd"
+(defcustom ob-erd-executable-path "erd"
   "Path to the erd executable."
   :group 'org-babel
   :type 'string)
 
-(defcustom org-imagemagick-convert-executable-path "convert"
+(defcustom ob-erd-imagemagick-convert-executable-path "convert"
   "Path to imagemagick's convert executable."
   :group 'org-babel
   :type 'string)
